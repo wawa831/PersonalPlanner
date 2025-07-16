@@ -3,19 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    
-    <!-- SPA 路由重定向脚本 - 必须放在最前面 -->
-    <script>
-    (function () {
-        const redir = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redir && redir !== location.href) {
-            history.replaceState(null, null, redir);
-        }
-    })();
-    </script>
-    
-    <!-- 你的静态资源引用 -->
     <script type="module" crossorigin src="./assets/index-BLr_TbNl.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-Ce8r9UKI.css">
     
